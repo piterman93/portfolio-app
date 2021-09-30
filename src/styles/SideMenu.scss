@@ -1,0 +1,86 @@
+@import "_colours";
+
+.menu {
+  height: calc(100vh - 80px);
+  width: 30vh;
+  position: fixed;
+  top: 80px;
+  right: -30vh;
+  z-index: 2;
+  background-color: $primaryColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 0;
+  opacity: 0;
+  transition: 0.4s ease;
+
+  &.menu_active {
+    background-color: rgb(119, 34, 168);
+    top: 80px;
+    right: 0;
+    opacity: 1;
+  }
+
+  .menu__top {
+    height: 40%;
+    width: 100%;
+    ul {
+      list-style: none;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      li {
+        font-family: "Architects Daughter", cursive;
+        font-size: 30px;
+        width: 80%;
+        border: 1px solid black;
+
+        transition: 0.4s ease;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: black;
+          z-index: -1;
+          transform: scaleX(0);
+          transform-origin: right;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover::after {
+          transform: scaleX(1);
+        }
+        &:focus::after {
+          transform: scaleX(1);
+        }
+
+        a {
+          text-decoration: none;
+          display: block;
+          padding: 0.5rem 2rem;
+          color: black;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
