@@ -1,0 +1,24 @@
+.description_details {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  font-family: "Patrick Hand", cursive;
+
+  letter-spacing: 0.07em;
+  position: relative;
+
+  h3 {
+    margin: 2rem 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  .scroll {
+    position: relative;
+    margin: 0 2rem;
+    text-align: justify;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+}

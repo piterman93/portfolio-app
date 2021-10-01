@@ -2,7 +2,128 @@
 
 .about {
   color: $textColour;
-  border-bottom: 1px solid gray;
   background-color: $backgroundColor;
-  // background-color: darkblue;
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .about__card {
+      width: 80%;
+      height: 70%;
+      position: relative;
+      background-color: rgb(19, 19, 19);
+      border-radius: 30px;
+      margin: auto;
+      -webkit-box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+      box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+
+        li {
+          padding: 0.75rem;
+          border: 1px solid white;
+          border-radius: 10px;
+          position: relative;
+          z-index: 1;
+          transition: 0.2s ease;
+          cursor: pointer;
+          font-size: 18px;
+          font-family: "Architects Daughter", cursive;
+          letter-spacing: 0.1em;
+
+          &.active {
+            background-color: $homeMenuColor;
+            font-weight: bold;
+          }
+
+          &:hover {
+            font-weight: bold;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 10px;
+            background-color: $homeMenuColor;
+            z-index: -1;
+            transform: scaleX(0) scaleY(0);
+            transform-origin: center;
+            transition: transform 0.2s ease-in-out;
+          }
+
+          &:hover::after {
+            transform: scaleX(1) scaleY(1);
+          }
+          &:focus::after {
+            transform: scaleX(1) scaleY(1);
+          }
+        }
+      }
+
+      .container {
+        width: 90%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        .description {
+          width: 60%;
+          height: 90%;
+          display: flex;
+          border-radius: 20px;
+          -webkit-box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+          box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+        }
+
+        .image__container {
+          width: 35%;
+          height: 90%;
+          overflow: hidden;
+          position: relative;
+          border-radius: 20px;
+          -webkit-box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+          box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+
+          img {
+            position: absolute;
+            width: 100%;
+            height: 115%;
+            background-size: cover;
+          }
+        }
+      }
+    }
+
+    h1 {
+      font-family: "Architects Daughter", cursive;
+      margin-left: 3rem;
+      color: $paragraphTitle;
+      letter-spacing: 0.1em;
+
+      &:first-child {
+        margin-top: 2rem;
+      }
+
+      &:last-child {
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }

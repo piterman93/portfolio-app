@@ -18,8 +18,7 @@
   }
 
   &.show_border {
-    -webkit-box-shadow: 0px -2px 10px 5px $homeMenuColor;
-    box-shadow: 0px -2px 10px 5px $homeMenuColor;
+    border-bottom: 1px solid blue;
   }
 
   .logo {
