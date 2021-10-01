@@ -1,3 +1,7 @@
+@import "_colours";
+
 .contact {
-  background-color: blue;
+  color: $textColour;
+  border-bottom: 1px solid gray;
+  background-color: $backgroundColor;
 }

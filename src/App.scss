@@ -1,15 +1,19 @@
+@import "./styles/_colours";
+
 .App {
-  background-color: rgb(31, 29, 29);
+  // height: 100vh;
+  background-color: $themeColor;
+  height: calc(100vh + 80px);
 
   .section {
     position: relative;
-    top: 80px;
     width: 100%;
-    min-height: 100vh;
+    height: calc(100vh - 80px);
+    scroll-behavior: smooth;
 
     > * {
       width: 100%;
-      min-height: 100vh;
+      height: 100vh;
     }
   }
 }
