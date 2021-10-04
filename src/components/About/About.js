@@ -12,7 +12,7 @@ import HobbiesDescription from "./HobbiesDescription";
 
 const data = [
   { id: 1, title: "About me" },
-  { id: 2, title: "Skills & experience" },
+  { id: 2, title: "Skills" },
   { id: 3, title: "Hobbies" },
 ];
 

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import "../styles/Header.scss";
 
 import SideMenu from "./SideMenu";
+import logo from "../assets/logo-transparent.png";
 
 export default function Header() {
   const [headerActive, setHeaderActive] = useState(true);
@@ -49,7 +50,9 @@ export default function Header() {
     <>
       <div className={headerClasses}>
         <div className="logo">
-          <h3>Piotr Maniak .</h3>
+          <a href="#home">
+            <img src={logo} alt="logo Piotr Maniak" />
+          </a>
         </div>
         <div className="hamburger" onClick={showMenuHandler}>
           <span className="line 1"></span>

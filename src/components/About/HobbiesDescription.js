@@ -7,16 +7,12 @@ export default function HobbiesDescription() {
     <div className="description_details">
       <h3>Hobbies</h3>
       <div className="scroll">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut harum
-        alias culpa fuga non delectus iusto unde porro velit obcaecati
-        accusantium recusandae laudantium ad officia eius eligendi, veniam
-        excepturi nesciunt.lorem. Lorem ipsum, dolor sit amet consectetur
-        adipisicing elit. Sequi hic saepe explicabo? Cum obcaecati perspiciatis
-        ullam exercitationem autem ducimus ratione distinctio est hic,
-        doloremque officia quae quia porro provident reprehenderit. Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Accusamus error harum minus
-        magnam sed vero dolorem dolor nesciunt itaque voluptate quia cum totam
-        quae assumenda minima dolores inventore, at blanditiis!
+        My biggest passion is sport - I have been playing volleyball for about
+        last 13 years. Last year I was playing with my team in 2nd polish
+        league. In addition, I work on a gym, ride a bike and hike in the
+        mountains. My second passion is traveling. Exploring new places and
+        meeting new cultures is for me something special, that gives opportunity
+        to broad horizons.
       </div>
     </div>
   );

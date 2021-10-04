@@ -1,24 +1,111 @@
+@import "_colours";
+
 .description_details {
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: flex-start;
-  font-family: "Patrick Hand", cursive;
 
+  font-family: "Architects Daughter", cursive;
   letter-spacing: 0.07em;
   position: relative;
+  width: 100%;
 
   h3 {
-    margin: 2rem 0;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
     text-transform: uppercase;
     text-decoration: underline;
+    font-size: 22px;
   }
 
   .scroll {
-    position: relative;
-    margin: 0 2rem;
-    text-align: justify;
+    text-align: left;
     overflow-x: hidden;
     overflow-y: auto;
+    font-size: 17px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    opacity: 0.9;
+
+    p {
+      font-weight: bold;
+      font-size: 20px;
+      margin: 0.5rem;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      max-height: 250px;
+      align-items: flex-start;
+
+      .list_item {
+        margin: 0.5rem;
+        width: 45%;
+        height: 45px;
+        display: flex;
+        flex-direction: column;
+        span {
+          font-family: "Architects Daughter", cursive;
+        }
+
+        .item_bar {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          .item_progress {
+            margin-left: 0.5rem;
+            width: 70%;
+            height: 12px;
+            border-radius: 10px;
+            border: 1px solid white;
+            position: relative;
+            background-color: rgba(39, 39, 212, 0.349);
+            &._40 {
+              &::before {
+                width: 40%;
+              }
+            }
+
+            &._50 {
+              &::before {
+                width: 50%;
+              }
+            }
+            &._60 {
+              &::before {
+                width: 60%;
+              }
+            }
+            &._70 {
+              &::before {
+                width: 70%;
+              }
+            }
+            &._80 {
+              &::before {
+                width: 80%;
+              }
+            }
+
+            &::before {
+              display: block;
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              background-color: $paragraphTitle;
+              border-radius: 10px;
+            }
+          }
+        }
+      }
+    }
   }
 }
