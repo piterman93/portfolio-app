@@ -1,0 +1,58 @@
+@import "_colours";
+
+.form_container {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+
+  .message_confirmation {
+    background-color: #3f3b3b48;
+    border: 1px solid rgba(63, 62, 62, 0.418);
+    border-radius: 20px;
+    margin: auto;
+    font-size: 28px;
+    width: 80%;
+    text-align: center;
+    letter-spacing: 00.05em;
+    padding: 2rem;
+    -webkit-box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+    box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+  }
+
+  .error {
+    color: red;
+  }
+
+  .input__label {
+    color: white;
+    font-family: "Architects Daughter", cursive;
+    margin-top: 0.5rem;
+  }
+
+  .input__props {
+    background-color: rgba(63, 59, 59, 0.281);
+    color: white;
+    margin-top: 0.5rem;
+  }
+
+  .button {
+    font-family: "Architects Daughter", cursive;
+    font-size: 22px;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    background-color: rgba(63, 59, 59, 0.397);
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.1s;
+
+    &:hover {
+      background-color: $paragraphTitle;
+    }
+  }
+}

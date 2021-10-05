@@ -1,8 +1,9 @@
 import Header from "./components/Header";
 import About from "./components/About/About";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact/Contact";
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 import "./App.scss";
 
@@ -16,6 +17,7 @@ function App() {
         <Portfolio />
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }

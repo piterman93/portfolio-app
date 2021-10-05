@@ -1,0 +1,20 @@
+@import "_colours";
+
+.footer {
+  height: 10vh;
+  background-color: $themeColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $textColour;
+  font-family: "Architects Daughter", cursive;
+  font-size: 20px;
+
+  .logo {
+    margin-left: 1rem;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
