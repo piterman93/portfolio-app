@@ -3,6 +3,7 @@
 .portfolio {
   color: $textColour;
   background-color: $backgroundColor;
+  font-family: "Architects Daughter", cursive;
 
   .wrapper {
     width: 100%;
@@ -14,15 +15,119 @@
       width: 80%;
       height: 70%;
       position: relative;
-      background-color: rgb(19, 19, 19);
+      // background-color: rgb(19, 19, 19);
       border-radius: 30px;
       margin: auto;
-      -webkit-box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
-      box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: space-around;
+      flex-wrap: wrap;
+
+      .portfolio__item {
+        width: 30%;
+        height: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgba(61, 56, 56, 0.473);
+        border-radius: 20px;
+        cursor: pointer;
+        background-color: rgb(19, 19, 19);
+        -webkit-box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+        box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+
+        img {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          object-fit: cover;
+          border-radius: 20px;
+          transition: all 0.3s ease;
+        }
+
+        &:hover {
+          background-color: rgb(15, 15, 15);
+          opacity: 1;
+
+          img {
+            opacity: 0.2;
+            z-index: 0;
+            transform: scale(1.1);
+          }
+
+          .item__description {
+            opacity: 1;
+          }
+        }
+
+        .item__description {
+          width: 100%;
+          height: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          letter-spacing: 0.15em;
+          z-index: 0;
+          opacity: 0;
+
+          h2 {
+            text-decoration: underline;
+          }
+
+          .actions {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+
+            .button {
+              font-family: "Architects Daughter", cursive;
+              font-size: 14px;
+              padding: 0.5rem 1rem;
+              background-color: rgb(19, 19, 19);
+              border: 1px solid white;
+              color: white;
+              text-transform: uppercase;
+              border-radius: 15px;
+              cursor: pointer;
+              transition: 0.1s;
+              position: relative;
+              z-index: 1;
+
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                border-radius: 15px;
+                background-color: $homeMenuColor;
+                z-index: -1;
+                transform: scaleX(0) scaleY(0);
+                transform-origin: center;
+                transition: transform 0.2s ease-in-out;
+              }
+
+              &:hover::after {
+                transform: scaleX(1) scaleY(1);
+              }
+              &:focus::after {
+                transform: scaleX(1) scaleY(1);
+              }
+
+              &:hover {
+                // background-color: $paragraphTitle;
+              }
+            }
+          }
+        }
+      }
     }
 
     h1 {
