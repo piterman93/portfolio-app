@@ -1,4 +1,5 @@
 @import "_colours";
+@import "../index.scss";
 
 .header {
   position: fixed;
@@ -12,6 +13,11 @@
   z-index: 2;
   transition: 0.4s ease;
   padding: 0 5rem;
+
+  @include mobile {
+    // justify-content: space-between;
+    padding: 0 4rem;
+  }
 
   &.hided {
     transform: translateY(-80px);

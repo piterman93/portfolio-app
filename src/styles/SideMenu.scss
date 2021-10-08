@@ -1,4 +1,5 @@
 @import "_colours";
+@import "../index.scss";
 
 .menu {
   height: calc(100vh - 80px);
@@ -15,6 +16,10 @@
   padding: 5rem 0;
   opacity: 0;
   transition: 0.4s ease;
+
+  @include mobile {
+    width: 25vh;
+  }
 
   &.menu_active {
     background-color: $themeColor;
@@ -35,6 +40,10 @@
       align-items: center;
       justify-content: space-around;
 
+      @include mobile {
+        height: 90%;
+      }
+
       li {
         font-family: "Architects Daughter", cursive;
         font-size: 26px;
@@ -43,6 +52,10 @@
         transition: 0.4s ease;
         position: relative;
         z-index: 1;
+
+        @include mobile {
+          font-size: 20px;
+        }
 
         &:hover {
           transform: scale(1.1);

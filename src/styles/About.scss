@@ -1,4 +1,5 @@
 @import "_colours";
+@import "../index.scss";
 
 .about {
   color: $textColour;
@@ -6,33 +7,41 @@
 
   .wrapper {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 
     .about__card {
-      width: 80%;
-      height: 70%;
+      width: 90%;
+      height: 80vh;
       position: relative;
-      // background-color: rgb(19, 19, 19);
-      border-radius: 30px;
       margin: auto;
-      // -webkit-box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
-      // box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+
+      @include mobile {
+        height: 90%;
+        width: 90%;
+      }
 
       ul {
         list-style-type: none;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        width: 50%;
+        margin-top: 2rem;
+
+        @include mobile {
+          transform: scale(0.8);
+          flex-wrap: wrap;
+          margin-top: 1rem;
+        }
 
         li {
-          padding: 0.75rem;
+          padding: 0.75rem 1rem;
+          margin: 0 3.5rem;
           border: 1px solid white;
           border-radius: 20px;
           position: relative;
@@ -42,6 +51,12 @@
           font-size: 18px;
           font-family: "Architects Daughter", cursive;
           letter-spacing: 0.1em;
+          min-width: 8rem;
+          text-align: center;
+
+          @include mobile {
+            margin: 0.5rem 0.5rem;
+          }
 
           &.active {
             background-color: $homeMenuColor;
@@ -83,14 +98,21 @@
         align-items: center;
         justify-content: space-around;
 
+        @include mobile {
+          flex-direction: column;
+        }
+
         .description {
           width: 60%;
-          height: 90%;
+          min-height: 90%;
+          height: auto;
           display: flex;
-          border-radius: 20px;
+          padding-top: 2rem;
+          padding-bottom: 3rem;
 
-          // -webkit-box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
-          // box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+          @include mobile {
+            width: 90%;
+          }
         }
 
         .image__container {
@@ -102,8 +124,12 @@
           display: flex;
           align-items: flex-start;
           justify-content: center;
-          // -webkit-box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
-          // box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+
+          @include mobile {
+            width: 44vw;
+            height: 44vw;
+            margin-bottom: 2rem;
+          }
 
           img {
             width: 100%;
@@ -121,10 +147,18 @@
 
       &:first-child {
         margin-top: 2rem;
+
+        @include mobile {
+          margin-top: 1rem;
+        }
       }
 
       &:last-child {
         margin-bottom: 2rem;
+
+        @include mobile {
+          margin-bottom: 1rem;
+        }
       }
     }
   }
