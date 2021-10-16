@@ -1,6 +1,6 @@
 import React from "react";
 
-import skills from "../../assets/hobbies.jpg";
+import skills from "../../assets/check-in-app.png";
 import PortfolioItem from "./PortfolioItem";
 
 import "../../styles/Portfolio.scss";
@@ -13,10 +13,12 @@ const data = [
     id: 1,
     source: skills,
     alt: "moja apka",
-    title: "check in app",
+    title: "Check in app",
     technologies: "React | Redux | SCSS",
     live: "https://piterman93.github.io/check-in-app/",
     code: "https://github.com/piterman93/check-in-app",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quam magni illo temporibus soluta distinctio mollitia harum, dolores repellat aspernatur rerum labore at? Pariatur ipsum quasi optio, itaque dicta cum!",
   },
   {
     id: 2,
@@ -26,6 +28,8 @@ const data = [
     technologies: "React | Redux | SCSS",
     live: "https://piterman93.github.io/check-in-app/",
     code: "https://github.com/piterman93/check-in-app",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quam magni illo temporibus soluta distinctio mollitia harum, dolores repellat aspernatur rerum labore at? Pariatur ipsum quasi optio, itaque dicta cum!",
   },
   {
     id: 3,
@@ -35,6 +39,8 @@ const data = [
     technologies: "React | Redux | SCSS",
     live: "https://piterman93.github.io/check-in-app/",
     code: "https://github.com/piterman93/check-in-app",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quam magni illo temporibus soluta distinctio mollitia harum, dolores repellat aspernatur rerum labore at? Pariatur ipsum quasi optio, itaque dicta cum!",
   },
   {
     id: 4,
@@ -44,6 +50,8 @@ const data = [
     technologies: "React | Redux | SCSS",
     live: "https://piterman93.github.io/check-in-app/",
     code: "https://github.com/piterman93/check-in-app",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quam magni illo temporibus soluta distinctio mollitia harum, dolores repellat aspernatur rerum labore at? Pariatur ipsum quasi optio, itaque dicta cum!",
   },
   {
     id: 5,
@@ -53,6 +61,8 @@ const data = [
     technologies: "React | Redux | SCSS",
     live: "https://piterman93.github.io/check-in-app/",
     code: "https://github.com/piterman93/check-in-app",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quam magni illo temporibus soluta distinctio mollitia harum, dolores repellat aspernatur rerum labore at? Pariatur ipsum quasi optio, itaque dicta cum",
   },
   {
     id: 6,
@@ -62,6 +72,8 @@ const data = [
     technologies: "React | Redux | SCSS",
     live: "https://piterman93.github.io/check-in-app/",
     code: "https://github.com/piterman93/check-in-app",
+    description:
+      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quam magni illo temporibus soluta distinctio mollitia harum, dolores repellat aspernatur rerum labore at? Pariatur ipsum quasi optio, itaque dicta cum!",
   },
 ];
 

@@ -24,7 +24,7 @@ export default function SkillsDescription() {
     />
   ));
   return (
-    <div className="description_details">
+    <div className="description__details">
       <h3>Skills</h3>
       <div className="scroll">
         <p>Technologies and tools I currently work with: </p>

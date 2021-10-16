@@ -88,9 +88,9 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="form_container">
+    <div className="form__container">
       {showMessageConfirmation && (
-        <div className="message_confirmation">
+        <div className="message__confirmation">
           <p>Your message has been sent.</p>
           <p>I will respond as soon as possible.</p>
           <p>Thank you!</p>

@@ -4,7 +4,7 @@ import "../../styles/AboutDescription.scss";
 
 export default function AboutDescription() {
   return (
-    <div className="description_details">
+    <div className="description__details">
       <h3>About Me</h3>
       <div className="scroll">
         Hello! My name is Piotrek. I am 28 years old Junior Front-End Developer.

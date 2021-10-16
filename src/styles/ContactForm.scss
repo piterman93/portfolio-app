@@ -1,7 +1,7 @@
 @import "_colours";
 @import "../index.scss";
 
-.form_container {
+.form__container {
   width: 65%;
   height: 100%;
   display: flex;
@@ -10,7 +10,7 @@
   position: relative;
   padding-top: 1rem;
 
-  .message_confirmation {
+  .message__confirmation {
     background-color: #3f3b3b48;
     border: 1px solid rgba(63, 62, 62, 0.418);
     border-radius: 20px;

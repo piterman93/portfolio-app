@@ -1,0 +1,191 @@
+@import "_colours";
+@import "../index.scss";
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.95;
+  background-color: rgb(12, 12, 12);
+  z-index: 11;
+
+  .close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    opacity: 0.8;
+    cursor: pointer;
+
+    @include mobile {
+      width: 30px;
+      height: 30px;
+    }
+
+    .close__icon {
+      width: 100%;
+      height: 100%;
+      color: white;
+      background-color: rgb(12, 12, 12);
+    }
+  }
+}
+
+.modal__card {
+  position: fixed;
+  top: 5vh;
+  left: 4vw;
+  margin: auto;
+  width: 90vw;
+  height: 90vh;
+  z-index: 22;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: slide-down 0.8s ease-out forwards;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-10rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .modal__description {
+    border: 1px solid rgba(32, 32, 32, 0.699);
+    border-radius: 30px;
+    color: white;
+    letter-spacing: 0.1em;
+    font-family: "Architects Daughter", cursive;
+    width: 35%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2rem;
+    -webkit-box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+    box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+
+    @media screen and (max-width: 1000px) {
+      width: 45%;
+    }
+
+    @include mobile {
+      width: 90%;
+      height: 60%;
+    }
+
+    h1 {
+      text-decoration: underline;
+      color: $paragraphTitle;
+
+      @include mobile {
+        font-size: 28px;
+      }
+    }
+
+    h3 {
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+
+    p {
+      text-align: center;
+
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+
+    .actions {
+      width: 70%;
+      display: flex;
+      justify-content: space-around;
+
+      .button {
+        font-family: "Architects Daughter", cursive;
+        font-size: 20px;
+        padding: 0.5rem 1rem;
+        background-color: rgb(19, 19, 19);
+        border: 1px solid white;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: 0.1s;
+        position: relative;
+        z-index: 1;
+
+        @include mobile {
+          font-size: 16px;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: 15px;
+          background-color: $homeMenuColor;
+          z-index: -1;
+          transform: scaleX(0) scaleY(0);
+          transform-origin: center;
+          transition: transform 0.2s ease-in-out;
+        }
+
+        &:hover::after {
+          transform: scaleX(1) scaleY(1);
+        }
+        &:focus::after {
+          transform: scaleX(1) scaleY(1);
+        }
+
+        &:hover {
+          // background-color: $paragraphTitle;
+        }
+      }
+    }
+  }
+
+  .modal__image_container {
+    width: 60%;
+    height: 80%;
+    height: 35vw;
+    border: 1px solid rgba(32, 32, 32, 0.699);
+    border-radius: 30px;
+    -webkit-box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+    box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+
+    @media screen and (max-width: 1000px) {
+      width: 50%;
+    }
+
+    @include mobile {
+      margin-top: 1rem;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      object-fit: fill;
+      border-radius: 30px;
+    }
+  }
+}

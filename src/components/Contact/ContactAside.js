@@ -16,11 +16,11 @@ export default function ContactAside() {
         </p>
         <p>Do not hesitate and contact me by filling the form!</p>
       </div>
-      <div className="icons_wrapper">
+      <div className="icons__wrapper">
         <div className="logo">
           <img src={contactLogo} alt="messenger logo icon" />
         </div>
-        <div className="logo my_logo">
+        <div className="logo my__logo">
           <img src={myLogo} alt="Piotr Maniak logo icon" />
         </div>
       </div>

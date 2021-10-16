@@ -4,7 +4,7 @@ import "../../styles/AboutDescription.scss";
 
 export default function HobbiesDescription() {
   return (
-    <div className="description_details">
+    <div className="description__details">
       <h3>Hobbies</h3>
       <div className="scroll">
         My biggest passion is sport - I have been playing volleyball for about
