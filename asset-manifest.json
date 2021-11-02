@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/portfolio-app/static/css/main.2af862af.chunk.css",
+    "main.js": "/portfolio-app/static/js/main.92d599a0.chunk.js",
+    "main.js.map": "/portfolio-app/static/js/main.92d599a0.chunk.js.map",
+    "runtime-main.js": "/portfolio-app/static/js/runtime-main.70c0d8cd.js",
+    "runtime-main.js.map": "/portfolio-app/static/js/runtime-main.70c0d8cd.js.map",
+    "static/js/2.5b19b41a.chunk.js": "/portfolio-app/static/js/2.5b19b41a.chunk.js",
+    "static/js/2.5b19b41a.chunk.js.map": "/portfolio-app/static/js/2.5b19b41a.chunk.js.map",
+    "index.html": "/portfolio-app/index.html",
+    "static/css/main.2af862af.chunk.css.map": "/portfolio-app/static/css/main.2af862af.chunk.css.map",
+    "static/js/2.5b19b41a.chunk.js.LICENSE.txt": "/portfolio-app/static/js/2.5b19b41a.chunk.js.LICENSE.txt",
+    "static/media/afore-app.02a86ed9.png": "/portfolio-app/static/media/afore-app.02a86ed9.png",
+    "static/media/burger-app.cae42177.png": "/portfolio-app/static/media/burger-app.cae42177.png",
+    "static/media/check-in-app.3591ddc2.png": "/portfolio-app/static/media/check-in-app.3591ddc2.png",
+    "static/media/fit-app.0d328729.png": "/portfolio-app/static/media/fit-app.0d328729.png",
+    "static/media/hobbies.b0fd6fed.jpg": "/portfolio-app/static/media/hobbies.b0fd6fed.jpg",
+    "static/media/Home.scss": "/portfolio-app/static/media/home.f3228ad6.jpg",
+    "static/media/moje.b095d6b9.jpg": "/portfolio-app/static/media/moje.b095d6b9.jpg",
+    "static/media/skills.4ddabd0a.jpg": "/portfolio-app/static/media/skills.4ddabd0a.jpg",
+    "static/media/vaccine-app.dd700e26.png": "/portfolio-app/static/media/vaccine-app.dd700e26.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70c0d8cd.js",
+    "static/js/2.5b19b41a.chunk.js",
+    "static/css/main.2af862af.chunk.css",
+    "static/js/main.92d599a0.chunk.js"
+  ]
+}
