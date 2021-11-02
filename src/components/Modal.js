@@ -2,7 +2,6 @@ import React, { Fragment } from "react";
 import ReactDOM from "react-dom";
 
 import "../styles/Modal.scss";
-import image from "../assets/check-in-app.png";
 
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -19,6 +18,9 @@ const Backdrop = ({ onClose }) => {
 };
 
 const Overlay = ({ item }) => {
+  const imageContainerClasses = `modal__image_container ${
+    item.phoneApp ? "mobile" : ""
+  }`;
   return (
     <div className="modal__card">
       <div className="modal__description">
@@ -26,16 +28,20 @@ const Overlay = ({ item }) => {
         <p>{item.description}</p>
         <h3>{item.technologies}</h3>
         <div className="actions">
-          <a href={item.live} target="_blank">
-            <button className="button">Live</button>
+          <a href={item.live} target="_blank" rel="noreferrer">
+            <button className="button" disabled={!item.live}>
+              Live
+            </button>
           </a>
-          <a href={item.code} target="_blank">
-            <button className="button">Code</button>
+          <a href={item.code} target="_blank" rel="noreferrer">
+            <button className="button" disabled={!item.code}>
+              Code
+            </button>
           </a>
         </div>
       </div>
-      <div className="modal__image_container">
-        <img src={image} alt="" />
+      <div className={imageContainerClasses}>
+        <img src={item.source} alt={item.alt} />
       </div>
     </div>
   );

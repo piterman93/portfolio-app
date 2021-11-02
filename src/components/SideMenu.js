@@ -29,22 +29,42 @@ export default function SideMenu({ showHeaderMenu, showMenuHandler }) {
 
       <div className="menu__bottom">
         <div className="icon__wrapper">
-          <a href="https://github.com/piterman93" target="_blank">
+          <a
+            href="https://github.com/piterman93"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Github"
+          >
             <GitHubIcon />
           </a>
         </div>
         <div className="icon__wrapper">
-          <a href="https://www.linkedin.com/in/piotrmaniak93/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/piotrmaniak93/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="LinkedIn"
+          >
             <LinkedInIcon />
           </a>
         </div>
         <div className="icon__wrapper">
-          <a href="https://www.facebook.com/piotrek.maniak" target="_blank">
+          <a
+            href="https://www.facebook.com/piotrek.maniak"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Facebook"
+          >
             <FacebookIcon />
           </a>
         </div>
         <div className="icon__wrapper">
-          <a href="https://www.instagram.com/piterman93/" target="_blank">
+          <a
+            href="https://www.instagram.com/piterman93/"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Instagram"
+          >
             <InstagramIcon />
           </a>
         </div>

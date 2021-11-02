@@ -1,7 +1,5 @@
 import "../styles/Home.scss";
 
-import logo from "../assets/logo-transparent.png";
-
 export default function Home() {
   return (
     <div className="home" id="home">

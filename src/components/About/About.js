@@ -11,25 +11,38 @@ import SkillsDescription from "./SkillsDescription";
 import HobbiesDescription from "./HobbiesDescription";
 
 const data = [
-  { id: 1, title: "About me" },
-  { id: 2, title: "Skills" },
-  { id: 3, title: "Hobbies" },
+  { id: 1, title: "About me", image: myPhoto },
+  { id: 2, title: "Skills", image: skills },
+  { id: 3, title: "Hobbies", image: hobbies },
 ];
 
 export default function About() {
-  const [activeText, setActiveText] = useState(1);
+  const [activeItem, setActiveItem] = useState(data[0]);
 
-  const activeTextHandler = (id) => {
-    setActiveText(id);
+  const activeItemHandler = (item) => {
+    setActiveItem(item);
   };
 
-  const photoSource =
-    activeText === 1 ? myPhoto : activeText === 2 ? skills : hobbies;
+  const listContent = data.map((item) => {
+    let className;
+    if (activeItem.id === item.id) {
+      className = "active";
+    } else className = "";
+    return (
+      <li
+        key={item.id}
+        className={className}
+        onClick={() => activeItemHandler(item)}
+      >
+        {item.title}
+      </li>
+    );
+  });
 
   const descriptionContent =
-    activeText === 1 ? (
+    activeItem.id === 1 ? (
       <AboutDescription />
-    ) : activeText === 2 ? (
+    ) : activeItem.id === 2 ? (
       <SkillsDescription />
     ) : (
       <HobbiesDescription />
@@ -43,27 +56,11 @@ export default function About() {
       <div className="wrapper">
         <h1>{title}</h1>
         <div className="about__card">
-          <ul>
-            {data.map((item) => {
-              let className;
-              if (activeText === item.id) {
-                className = "active";
-              } else className = "";
-              return (
-                <li
-                  key={item.id}
-                  className={className}
-                  onClick={() => activeTextHandler(item.id)}
-                >
-                  {item.title}
-                </li>
-              );
-            })}
-          </ul>
+          <ul>{listContent}</ul>
           <div className="container">
             <div className="description">{descriptionContent}</div>
             <div className="image__container">
-              <img src={photoSource} alt="my photos" />
+              <img src={activeItem.image} alt="my photos" />
             </div>
           </div>
         </div>

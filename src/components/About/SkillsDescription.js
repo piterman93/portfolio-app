@@ -1,6 +1,7 @@
 import React from "react";
 
 import "../../styles/AboutDescription.scss";
+
 import SkillItem from "./SkillItem";
 
 const data = [

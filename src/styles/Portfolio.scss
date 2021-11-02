@@ -35,15 +35,15 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid rgba(61, 56, 56, 0.473);
         border-radius: 20px;
         cursor: pointer;
         background-color: rgb(19, 19, 19);
-        -webkit-box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
-        box-shadow: 1px -1px 8px 3px rgba(29, 29, 29, 0.73);
+        -webkit-box-shadow: 1px -1px 15px 3px rgba(54, 52, 52, 0.73);
+        box-shadow: 1px -1px 15px 3px rgba(54, 52, 52, 0.73);
         position: relative;
         overflow: hidden;
         transition: all 0.4s ease;
+        border: 1px solid rgba(90, 89, 89, 0.623);
 
         @include mobile {
           width: 70vw;
@@ -89,6 +89,7 @@
 
           h2 {
             text-decoration: underline;
+            text-align: center;
           }
 
           .actions {
@@ -131,12 +132,14 @@
               &:focus::after {
                 transform: scaleX(1) scaleY(1);
               }
-
-              &:hover {
-                // background-color: $paragraphTitle;
-              }
             }
           }
+        }
+      }
+
+      .mobile {
+        img {
+          object-fit: contain;
         }
       }
     }

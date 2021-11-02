@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 
 import "../styles/Header.scss";
 
@@ -12,7 +12,7 @@ export default function Header() {
 
   let oldValue = 0;
 
-  const controlHeader = () => {
+  const controlHeader = useCallback(() => {
     const newValue = window.pageYOffset;
     if (oldValue - newValue > 0) {
       setHeaderActive(true);
@@ -28,7 +28,7 @@ export default function Header() {
       setShowBorder(false);
     }
     oldValue = newValue;
-  };
+  }, []);
 
   const showMenuHandler = () => {
     setShowHeaderMenu((prevState) => !prevState);
@@ -39,7 +39,7 @@ export default function Header() {
     return () => {
       window.removeEventListener("scroll", controlHeader);
     };
-  }, []);
+  }, [controlHeader]);
 
   const headerClasses = `header 
   ${!headerActive && "hided"} 
