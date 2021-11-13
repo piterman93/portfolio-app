@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-app/static/css/main.2af862af.chunk.css",
-    "main.js": "/portfolio-app/static/js/main.92d599a0.chunk.js",
-    "main.js.map": "/portfolio-app/static/js/main.92d599a0.chunk.js.map",
+    "main.js": "/portfolio-app/static/js/main.c43632a0.chunk.js",
+    "main.js.map": "/portfolio-app/static/js/main.c43632a0.chunk.js.map",
     "runtime-main.js": "/portfolio-app/static/js/runtime-main.70c0d8cd.js",
     "runtime-main.js.map": "/portfolio-app/static/js/runtime-main.70c0d8cd.js.map",
     "static/js/2.5b19b41a.chunk.js": "/portfolio-app/static/js/2.5b19b41a.chunk.js",
@@ -16,7 +16,7 @@
     "static/media/fit-app.0d328729.png": "/portfolio-app/static/media/fit-app.0d328729.png",
     "static/media/hobbies.b0fd6fed.jpg": "/portfolio-app/static/media/hobbies.b0fd6fed.jpg",
     "static/media/Home.scss": "/portfolio-app/static/media/home.f3228ad6.jpg",
-    "static/media/moje.b095d6b9.jpg": "/portfolio-app/static/media/moje.b095d6b9.jpg",
+    "static/media/moje.242bc70b.jpg": "/portfolio-app/static/media/moje.242bc70b.jpg",
     "static/media/skills.4ddabd0a.jpg": "/portfolio-app/static/media/skills.4ddabd0a.jpg",
     "static/media/vaccine-app.dd700e26.png": "/portfolio-app/static/media/vaccine-app.dd700e26.png"
   },
@@ -24,6 +24,6 @@
     "static/js/runtime-main.70c0d8cd.js",
     "static/js/2.5b19b41a.chunk.js",
     "static/css/main.2af862af.chunk.css",
-    "static/js/main.92d599a0.chunk.js"
+    "static/js/main.c43632a0.chunk.js"
   ]
 }
