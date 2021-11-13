@@ -1,6 +1,6 @@
 # My portfolio application 
 
-Link to live version: [Portfolio App](https://piterman93.github.io/portfolio-app/).
+## Link to live version: [Portfolio App](https://piterman93.github.io/portfolio-app/).
 
 ## Instalation:
 
