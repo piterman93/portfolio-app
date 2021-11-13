@@ -22,7 +22,7 @@ const data = [
     alt: "BurgerBar Website",
     title: "BurgerBar website",
     technologies: "React | TypeScript | SCSS",
-    live: "https://piterman93.github.io/burger-app/",
+    live: "https://sad-johnson-66eaa6.netlify.app",
     code: "https://github.com/piterman93/burger-app",
     description:
       "Single page application created in React for a local restaurant which specialize in serving burgers.",
