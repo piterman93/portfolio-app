@@ -5,10 +5,10 @@ import "../../styles/AboutDescription.scss";
 import SkillItem from "./SkillItem";
 
 const data = [
-  { id: 1, title: "HTML5", percent: 80 },
+  { id: 1, title: "HTML5", percent: 90 },
   { id: 2, title: "CSS3 + (SASS)", percent: 80 },
-  { id: 3, title: "JavaScript", percent: 70 },
-  { id: 4, title: "TypeScript", percent: 40 },
+  { id: 3, title: "JavaScript", percent: 80 },
+  { id: 4, title: "TypeScript", percent: 50 },
   { id: 5, title: "React", percent: 80 },
   { id: 6, title: "React Native", percent: 50 },
   { id: 7, title: "Firebase", percent: 60 },

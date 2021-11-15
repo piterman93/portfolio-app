@@ -113,6 +113,11 @@
                 width: 80%;
               }
             }
+            &._90 {
+              &::before {
+                width: 90%;
+              }
+            }
 
             &::before {
               display: block;

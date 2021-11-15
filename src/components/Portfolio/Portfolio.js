@@ -37,7 +37,7 @@ const data = [
     live: "",
     code: "",
     description:
-      "Commercial application which is still being under development. Application will be available only for subscribing users. They will have an access to multiple workout plans, exercises, challenges and diets",
+      "Commercial application which is still being under development. Application will be available only for subscribing users. They will have an access to multiple workout plans, exercises, challenges and diets.",
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ const data = [
     live: "https://afore-dev.com/#/login",
     code: "",
     description:
-      "Big commercial application in which I was involved, created for a Afore Company. Application collects the data about photovoltaic installations",
+      "Big commercial application in which I was involved, created for a Afore Company. Application collects the data about photovoltaic installations.",
   },
   {
     id: 4,
@@ -61,7 +61,7 @@ const data = [
     live: "https://piterman93.github.io/check-in-app/",
     code: "https://github.com/piterman93/check-in-app",
     description:
-      "Website only application designed to simulate flight control, for example: it displays information about a selected flight, allows to check-in passengers, change seats, add special services for a selected passenger, edit his data, or filter passengers according to various criteria.",
+      "Web only application designed to simulate flight control, for example: it displays information about a selected flight, allows to check-in passengers, change seats, add special services for a selected passenger, edit his data, or filter passengers according to various criteria.",
   },
   {
     id: 5,
