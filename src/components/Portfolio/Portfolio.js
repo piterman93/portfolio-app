@@ -10,6 +10,8 @@ import burger from "../../assets/burger-app.png";
 import afore from "../../assets/afore-app.png";
 import vaccine from "../../assets/vaccine-app.png";
 import fit from "../../assets/fit-app.png";
+import shop from "../../assets/shop.png";
+import movie from "../../assets/movie.png";
 
 const title = "<portfolio>";
 const titleEnd = "</portfolio>";
@@ -29,6 +31,17 @@ const data = [
   },
   {
     id: 2,
+    source: shop,
+    phoneApp: false,
+    alt: "Shop App",
+    title: "Shop App",
+    technologies: "React | Redux | TypeScript | SCSS",
+    live: "https://goofy-stonebraker-e952df.netlify.app",
+    code: "https://github.com/piterman93/online-shop",
+    description: "Single page application created for learning purposes",
+  },
+  {
+    id: 3,
     source: fit,
     phoneApp: true,
     alt: "Fitness application",
@@ -40,7 +53,7 @@ const data = [
       "Commercial application which is still being under development. Application will be available only for subscribing users. They will have an access to multiple workout plans, exercises, challenges and diets.",
   },
   {
-    id: 3,
+    id: 4,
     source: afore,
     phoneApp: false,
     alt: "Afore application",
@@ -52,7 +65,7 @@ const data = [
       "Big commercial application in which I was involved, created for a Afore Company. Application collects the data about photovoltaic installations.",
   },
   {
-    id: 4,
+    id: 5,
     source: checkin,
     phoneApp: false,
     alt: "Check-in application",
@@ -64,7 +77,18 @@ const data = [
       "Web only application designed to simulate flight control, for example: it displays information about a selected flight, allows to check-in passengers, change seats, add special services for a selected passenger, edit his data, or filter passengers according to various criteria.",
   },
   {
-    id: 5,
+    id: 6,
+    source: movie,
+    phoneApp: false,
+    alt: "Movie Picker",
+    title: "Movie Picker",
+    technologies: "React | TypeScript |Context API",
+    live: "https://piterman93.github.io/movie-picker/",
+    code: "https://github.com/piterman93/movie-picker",
+    description: `Single Page Application based on "Tinder scheme" - user can accept or reject the film if he/she likes or not`,
+  },
+  {
+    id: 7,
     source: vaccine,
     phoneApp: false,
     alt: "Vaccination application",
